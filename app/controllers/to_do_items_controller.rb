@@ -10,7 +10,7 @@ class ToDoItemsController < ApplicationController
     end 
 
     def create 
-        @toDoItem = ToDoItem.create(activity: params[:activity])
+        @toDoItem = ToDoItem.create(activity: params[:activity], user_id: params[:user_id])
         render json: @toDoItem
     end 
 
