@@ -6,14 +6,16 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-toDoItem.destroy_all
-user.destroy_all
+ToDoItem.destroy_all
+User.destroy_all
 
-User.create(name: "Hannah", password: "Hannah", location: "80216")
-User.create(name: "Blake", password: "Blake", location: "80205")
-User.create(name: "Ben", password: "Ben", location: "19003")
-User.create(name: "Will", password: "Will", location: "59336")
+User.create(username: "Hannah", password: "Hannah", location: "80216")
+User.create(username: "Blake", password: "Blake", location: "80205")
+User.create(username: "Ben", password: "Ben", location: "19003")
+User.create(username: "Will", password: "Will", location: "59336")
 
-toDoItem.create(activity: "yoga")
-toDoItem.create(activity: "")
-toDoItem.create(activity: "")
+ToDoItem.create(activity: "yoga")
+ToDoItem.create(activity: "take vitamins")
+ToDoItem.create(activity: "drink 2 cups of water")
+ToDoItem.create(activity: "drink 2 cups of water")
+ToDoItem.create(activity: "laundry")
