@@ -1,17 +1,28 @@
-class toDoItemsController < ApplicationController
+class ToDoItemsController < ApplicationController
     def index 
-        @toDoItems = toDoItem.all
+        @toDoItems = ToDoItem.all
         render json: @toDoItems 
     end
 
     def show
-        @toDoItem = toDoItem.find(params[:id])
+        @toDoItem = ToDoItem.find(params[:id])
         render json: @toDoItem
     end 
 
     def create 
-        @toDoItem = toDoItem.create(activity: params[:activity])
+        @toDoItem = ToDoItem.create(activity: params[:activity])
         render json: @toDoItem
+    end 
+
+    def delete
+        @toDoItem = ToDoItem.find(params[:id])
+        @toDoItem.destroy
+        render status: 204
+    end 
+
+    def update
+        @toDoItem = ToDoItem.find(params[:id])
+        @toDoItem.update(activity: params[:activity])
     end 
     
 end

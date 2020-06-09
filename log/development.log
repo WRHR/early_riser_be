@@ -165,3 +165,184 @@ puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
 puma (4.3.5) lib/puma/server.rb:472:in `process_client'
 puma (4.3.5) lib/puma/server.rb:328:in `block in run'
 puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/toDoItems" for ::1 at 2020-06-09 11:34:36 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/toDoItems"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/toDoItems" for ::1 at 2020-06-09 11:35:45 -0600
+  
+ArgumentError ('toDoItems' is not a supported controller name. This can lead to potential routing problems. See https://guides.rubyonrails.org/routing.html#specifying-a-controller-to-use):
+  
+config/routes.rb:3:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/to_do_items" for ::1 at 2020-06-09 11:35:52 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/to_do_items"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/to_do_items" for ::1 at 2020-06-09 11:36:56 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/w/Flatiron/2mod/project/early_riser_be/app/controllers/to_do_items_controller.rb:1: class/module name must be CONSTANT
+class toDoItemsController < ApplicationController
+      ^~~~~~~~~~~~~~~~~~~):
+  
+app/controllers/to_do_items_controller.rb:1: class/module name must be CONSTANT
+app/controllers/to_do_items_controller.rb:1: class/module name must be CONSTANT
+Started GET "/to_do_items" for ::1 at 2020-06-09 11:37:14 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ToDoItemsController#index as */*
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 0.0ms | Allocations: 70672)
+
+
+  
+NameError (undefined local variable or method `toDoItem' for #<ToDoItemsController:0x00007fc3180506d0>
+Did you mean?  to_do_item_url):
+  
+app/controllers/to_do_items_controller.rb:3:in `index'
+Started GET "/to_do_items" for ::1 at 2020-06-09 11:38:29 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ToDoItemsController#index as */*
+  [1m[36mToDoItem Load (0.7ms)[0m  [1m[34mSELECT "to_do_items".* FROM "to_do_items"[0m
+  ↳ app/controllers/to_do_items_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 1.5ms | ActiveRecord: 1.1ms | Allocations: 2033)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mToDoItem Load (0.1ms)[0m  [1m[34mSELECT "to_do_items".* FROM "to_do_items" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mToDoItem Load (0.2ms)[0m  [1m[34mSELECT "to_do_items".* FROM "to_do_items" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mToDoItem Load (0.1ms)[0m  [1m[34mSELECT "to_do_items".* FROM "to_do_items"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Hannah"], ["password", "Hannah"], ["location", "80216"], ["created_at", "2020-06-09 17:41:57.572947"], ["updated_at", "2020-06-09 17:41:57.572947"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Blake"], ["password", "Blake"], ["location", "80205"], ["created_at", "2020-06-09 17:41:57.576477"], ["updated_at", "2020-06-09 17:41:57.576477"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Ben"], ["password", "Ben"], ["location", "19003"], ["created_at", "2020-06-09 17:41:57.579580"], ["updated_at", "2020-06-09 17:41:57.579580"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "location", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Will"], ["password", "Will"], ["location", "59336"], ["created_at", "2020-06-09 17:41:57.584168"], ["updated_at", "2020-06-09 17:41:57.584168"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mToDoItem Create (0.6ms)[0m  [1m[32mINSERT INTO "to_do_items" ("activity", "user_id") VALUES (?, ?)[0m  [["activity", "yoga"], ["user_id", 9]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mToDoItem Create (0.3ms)[0m  [1m[32mINSERT INTO "to_do_items" ("activity", "user_id") VALUES (?, ?)[0m  [["activity", "take vitamins"], ["user_id", 10]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mToDoItem Create (0.3ms)[0m  [1m[32mINSERT INTO "to_do_items" ("activity", "user_id") VALUES (?, ?)[0m  [["activity", "drink 2 cups of water"], ["user_id", 11]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mToDoItem Create (0.3ms)[0m  [1m[32mINSERT INTO "to_do_items" ("activity", "user_id") VALUES (?, ?)[0m  [["activity", "drink 2 cups of water"], ["user_id", 12]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mToDoItem Create (0.3ms)[0m  [1m[32mINSERT INTO "to_do_items" ("activity", "user_id") VALUES (?, ?)[0m  [["activity", "laundry"], ["user_id", 9]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mToDoItem Load (0.1ms)[0m  [1m[34mSELECT "to_do_items".* FROM "to_do_items" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/to_do_items" for ::1 at 2020-06-09 11:42:18 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ToDoItemsController#index as */*
+  [1m[36mToDoItem Load (0.2ms)[0m  [1m[34mSELECT "to_do_items".* FROM "to_do_items"[0m
+  ↳ app/controllers/to_do_items_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 1.2ms | Allocations: 3984)
+
+
+Started GET "/users" for ::1 at 2020-06-09 11:42:48 -0600
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.7ms | Allocations: 6369)
+
+
+Started GET "/users/9" for ::1 at 2020-06-09 11:43:01 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.6ms | Allocations: 8971)
+
+
+  
+NoMethodError (undefined method `toDoItem' for #<User:0x00007fc316d71028>
+Did you mean?  toDoItems
+               toDoItems=):
+  
+app/controllers/users_controller.rb:9:in `show'
+Started GET "/users/9" for ::1 at 2020-06-09 11:43:28 -0600
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+  [1m[36mToDoItem Load (0.2ms)[0m  [1m[34mSELECT "to_do_items".* FROM "to_do_items" WHERE "to_do_items"."user_id" = ?[0m  [["user_id", 9]]
+  ↳ app/controllers/users_controller.rb:9:in `show'
+Completed 200 OK in 29ms (Views: 20.1ms | ActiveRecord: 1.6ms | Allocations: 13281)
+
+

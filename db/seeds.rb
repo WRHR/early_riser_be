@@ -9,13 +9,13 @@
 ToDoItem.destroy_all
 User.destroy_all
 
-User.create(username: "Hannah", password: "Hannah", location: "80216")
-User.create(username: "Blake", password: "Blake", location: "80205")
-User.create(username: "Ben", password: "Ben", location: "19003")
-User.create(username: "Will", password: "Will", location: "59336")
+hannah = User.create(username: "Hannah", password: "Hannah", location: "80216")
+blake = User.create(username: "Blake", password: "Blake", location: "80205")
+ben = User.create(username: "Ben", password: "Ben", location: "19003")
+will = User.create(username: "Will", password: "Will", location: "59336")
 
-ToDoItem.create(activity: "yoga")
-ToDoItem.create(activity: "take vitamins")
-ToDoItem.create(activity: "drink 2 cups of water")
-ToDoItem.create(activity: "drink 2 cups of water")
-ToDoItem.create(activity: "laundry")
+ToDoItem.create(activity: "yoga", user: hannah )
+ToDoItem.create(activity: "take vitamins", user: blake )
+ToDoItem.create(activity: "drink 2 cups of water", user: ben)
+ToDoItem.create(activity: "drink 2 cups of water", user: will)
+ToDoItem.create(activity: "laundry", user: hannah)
